@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kerimsamimi.oyun.Main5Activity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="387dp"
+        android:layout_height="514dp"
+        app:srcCompat="@drawable/bart2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="165dp"
+        android:layout_height="281dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView23"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Scores"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="119dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_green_light"
+            android:onClick="mayinsizClick"
+            android:text="MAYINSIZ"
+            tools:layout_editor_absoluteX="278dp"
+            tools:layout_editor_absoluteY="333dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/holo_green_light"
+            android:onClick="mayinliClick"
+            android:text="MAYINLI"
+            tools:layout_editor_absoluteX="193dp"
+            tools:layout_editor_absoluteY="333dp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="165dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/button4"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/background"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="264dp" />
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="165dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/listView"
+            android:background="@drawable/background"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="305dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="goHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+</android.support.constraint.ConstraintLayout>
